@@ -1,4 +1,4 @@
-
+import profile from "../assets/images/profile.png";
 import React from 'react';
 import { supabase } from '../../supabaseClient';
 
@@ -28,7 +28,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
     <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-[100]" onClick={onClose}>
       <div className="profile-card w-[330px] bg-white rounded-xl shadow-xl overflow-hidden text-center" onClick={e => e.stopPropagation()}>
         <div className="profile-header bg-[color:var(--theme-color)] h-24 relative">
-            <img src="/assets/images/profile.png" alt="Profile" className="w-24 h-24 rounded-full absolute -bottom-12 left-1/2 -translate-x-1/2 border-4 border-white object-cover" />
+            <img src={profile} alt="Profile" className="w-24 h-24 rounded-full absolute -bottom-12 left-1/2 -translate-x-1/2 border-4 border-white object-cover" />
         </div>
         <div className="profile-body pt-14 pb-6 px-5">
             <h4 className="text-xl font-bold text-gray-800">Welcome Back</h4>
