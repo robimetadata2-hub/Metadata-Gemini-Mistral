@@ -1,4 +1,4 @@
-import profile from "assets/images/profile.png";
+import profile from "/assets/images/profile.png";
 import React from 'react';
 import { supabase } from '../../supabaseClient';
 
