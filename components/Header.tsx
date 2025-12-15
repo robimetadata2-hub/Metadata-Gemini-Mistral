@@ -20,7 +20,7 @@ export const Header: React.FC<HeaderProps> = ({ onTutorialClick, user, onLogout,
         <a href="/" className="flex-shrink-0">
              <img 
                 src="/assets/images/logo.png" 
-                alt="Robi Technology Logo" 
+                alt="" 
                 className="h-10 sm:h-12 w-auto object-contain"
              />
         </a>
