@@ -27,7 +27,7 @@ export const Header: React.FC<HeaderProps> = ({ onTutorialClick, user, onLogout,
         
         <div className="flex items-center space-x-4 lg:space-x-6">
           <a 
-            href="#" 
+            href="https://mail.robiaistore.com/" 
             className="hidden md:flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2.5 rounded-lg text-base font-bold transition-all shadow-md border border-emerald-500/50 hover:shadow-emerald-500/20 whitespace-nowrap"
           >
              <i className="bi bi-cash-coin text-lg"></i>
