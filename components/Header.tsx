@@ -1,4 +1,4 @@
-
+import logo from "/assets/images/logo.png";
 import React, { useState } from 'react';
 
 interface HeaderProps {
@@ -19,7 +19,7 @@ export const Header: React.FC<HeaderProps> = ({ onTutorialClick, user, onLogout,
         {/* Logo wrapped in anchor tag for navigation and flexible sizing */}
         <a href="/" className="flex-shrink-0">
              <img 
-                src="/assets/images/logo.png" 
+                src={logo}
                 alt="" 
                 className="h-10 sm:h-12 w-auto object-contain"
              />
