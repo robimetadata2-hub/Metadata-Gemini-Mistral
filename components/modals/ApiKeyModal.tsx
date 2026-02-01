@@ -211,7 +211,7 @@ export const ApiKeyModal: React.FC<ApiKeyModalProps> = ({
                 </>
               ) : (
                 <>
-                  <option value="llama-3.2-11b-vision-preview">Llama 3.2 11b Vision (Faster)</option>
+                  <option value="llama3-8b-8192">Llama 3.2 11b Vision (Faster)</option>
                   <option value="llama-3.2-90b-vision-preview">Llama 3.2 90b Vision (Best)</option>
                   <option value="meta-llama/llama-4-maverick-17b-128e-instruct">Llama 4 Maverick 17b (Beta)</option>
                 </>
