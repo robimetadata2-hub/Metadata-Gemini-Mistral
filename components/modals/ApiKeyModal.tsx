@@ -205,7 +205,7 @@ export const ApiKeyModal: React.FC<ApiKeyModalProps> = ({
                 <>
                   <option value="pixtral-12b-2409">pixtral-12b-2409 (Vision - Images)</option>
                   <option value="open-mistral-nemo">open-mistral-nemo (Text Only)</option>
-                  <option value="mistral-large-latest">mistral-large-latest (Premium)</option>
+                  <option value="mistral-large-2512">mistral-large-2512</option>
                   <option value="mistral-medium-latest">mistral-medium-latest (Premium)</option>
                   <option value="mistral-small-latest">mistral-small-latest (Premium)</option>
                 </>
