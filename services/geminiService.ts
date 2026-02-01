@@ -152,7 +152,7 @@ const callMistralApi = async (apiKey: string, modelName: string, prompt: string,
         },
     ];
 
-    const response = await fetchWithTimeout("https://api.mistral.ai/v1/chat/completions", {
+    const response = await fetchWithTimeout("https://api.mistral.ai/v1/ocr", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
