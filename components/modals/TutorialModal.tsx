@@ -9,7 +9,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({ isOpen, onClose })
   if (!isOpen) return null;
 
   // REPLACE 'YOUR_VIDEO_ID' WITH THE ACTUAL YOUTUBE VIDEO ID YOU WANT TO SHOW
-  const VIDEO_ID = '4SNJaZHVve2e7xNY'; 
+  const VIDEO_ID = 'n-jgpNm_f7U'; 
 
   return (
     <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-[110] backdrop-blur-sm" onClick={onClose}>
