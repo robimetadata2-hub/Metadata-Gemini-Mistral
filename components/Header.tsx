@@ -1,3 +1,4 @@
+import logo from "/assets/images/logo.png";
 
 import React, { useState } from 'react';
 
@@ -16,30 +17,12 @@ export const Header: React.FC<HeaderProps> = ({ onTutorialClick }) => {
     <header className="bg-[#1f2022] border-b border-gray-700/50 shadow-md sticky top-0 z-50">
       <nav className="container mx-auto px-4 lg:px-6 py-4 flex justify-between items-center">
         {/* Logo wrapped in anchor tag for navigation and flexible sizing */}
-        <a href="/" className="flex-shrink-0 flex items-center">
-             {!logoError ? (
-                 <img 
-                    src={logoImage} 
-                    alt="Robi Technology Logo" 
-                    className="h-10 sm:h-12 w-auto object-contain"
-                    onError={(e) => {
-                        // Prevent infinite loop if fallback also fails
-                        if (logoError) return;
-                        setLogoError(true);
-                    }}
-                 />
-             ) : (
-                 <div className="flex items-center gap-2" title="Robi Technology">
-                    {/* Fallback Logo matching the description (Gear/Circuit style) */}
-                    <div className="relative flex items-center justify-center w-10 h-10">
-                        <i className="bi bi-gear-wide-connected text-3xl text-[color:var(--theme-color)]"></i>
-                        <div className="absolute w-1.5 h-1.5 bg-white rounded-full"></div>
-                    </div>
-                    <span className="text-xl font-bold text-white tracking-tight hidden sm:block">
-                        Robi<span className="text-[color:var(--theme-color)]">Tech</span>
-                    </span>
-                 </div>
-             )}
+      <a href="/" className="flex-shrink-0">
+             <img 
+                src={logo}
+                alt="" 
+                className="h-10 sm:h-12 w-auto object-contain"
+             />
         </a>
         
         <div className="flex items-center space-x-3 lg:space-x-4">
